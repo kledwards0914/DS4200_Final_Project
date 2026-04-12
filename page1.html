@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plot 1: Boxplot </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1 style = "color:black; font-size: 26px;"> Let's look at our boxplot! </h1>
+
+<div class="A">
+    <div class="A-inner">
+        <div class="box">
+            <h3>Take Away:</h3>
+            <p>This boxplot compares how popularity scores vary across the top Spotify genres. 
+It helps show which genres tend to have higher typical popularity, which ones are 
+more spread out, and where there are outliers. The chart makes it easy to see that 
+some genres are consistently more popular, while others have a wider range of song 
+performance.</p>
+        </div>
+        <div class="box">
+            <h3>Interaction:</h3>
+            <p>To read this visualization, compare the median line inside each
+box, the overall height of the box, and any outlier points. The median shows the typical 
+popularity for that genre, while the spread shows how much popularity varies within it. Hover over
+the box plots to see specific statistics such as the max, Q3, median, Q1, and miniumm of the genre
+that plot represents. 
+</p>
+        </div>
+    </div>
+</div>
+
+
+<div class="plot">
+    <iframe 
+        src="boxplot.html" 
+        width="800" 
+        height="600" 
+        style="border:none;">
+    </iframe>
+</div>
+
+  <p>
+    Go back to the home page or explore other Spotify visualizations!
+</p>
+
+<div>
+    <button onclick="goToPage('index.html')">Home</button>
+    <button onclick="goToPage('page1.html')">Boxplot</button>
+    <button onclick="goToPage('page2.html')">Histogram</button>
+    <button onclick="goToPage('page3.html')">Scatter Plot</button>
+    <button onclick="goToPage('page4.html')">Sankey Diagram</button>
+</div>
+
+<script>
+    function goToPage(page) {
+        window.location.href = page;
+    }
+</script>
+</body>
+
+</html>

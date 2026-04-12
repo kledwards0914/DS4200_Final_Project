@@ -1,0 +1,43 @@
+h1 {
+    text-align: center;
+    font-weight: bold;
+    font-family: "Times New Roman"
+}
+
+p {
+    font-family: "Times New Roman"
+}
+
+.A {
+    border: 5px solid black;
+    padding: 20px;
+    background-color: rgb(199, 176, 221);
+}
+
+.A-inner {
+    display: flex;
+    gap: 20px;
+}
+
+.box {
+    flex: 1;
+    border: 2px solid black;
+    padding: 15px;
+    background-color: white;
+}
+.C {
+    display: block;
+    margin: 0 auto;
+    border: 5px solid black;
+}
+.plot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}
+
+h2 {
+    margin-top: 40px;
+    margin-bottom: 10px;
+}

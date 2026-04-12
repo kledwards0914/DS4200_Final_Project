@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plot 3: Scatter Plot </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1 style = "color:black; font-size: 26px;"> Let's look at our Scatter Plot! </h1>
+
+<div class="A">
+    <div class="A-inner">
+        <div class="box">
+            <h3>Take Away:</h3>
+            <p>This scatter plot explores the relationship between tempo and danceability 
+                for songs by the most common artists across major genres. It helps show whether 
+                faster songs are always more danceable and whether certain artists or genres cluster 
+                together. The chart suggests that danceability does not depend only on tempo, since 
+                songs with similar tempos can still have very different danceability scores.</p>
+        </div>
+        <div class="box">
+            <h3>Interaction:</h3>
+            <p>Use the artist dropdown menu to filter the chart by a specific artist, or 
+                leave it on “All” to view every song. Hover over any point to see the artist, 
+                tempo, and danceability values. When an artist is selected, their songs stay 
+                highlighted while the others fade into the background.</p>
+        </div>
+    </div>
+</div>
+
+<div class="plot">
+    <iframe 
+        src="Tempo_Danceability_ScatterPlot.html" 
+        width="800" 
+        height="600" 
+        style="border:none;">
+    </iframe>
+</div>
+
+  <p>
+    Go back to the home page or explore other Spotify visualizations!
+</p>
+
+<div>
+    <button onclick="goToPage('index.html')">Home</button>
+    <button onclick="goToPage('page1.html')">Boxplot</button>
+    <button onclick="goToPage('page2.html')">Histogram</button>
+    <button onclick="goToPage('page3.html')">Scatter Plot</button>
+    <button onclick="goToPage('page4.html')">Sankey Diagram</button>
+</div>
+
+<script>
+    function goToPage(page) {
+        window.location.href = page;
+    }
+</script>
+</body>
+
+</html>

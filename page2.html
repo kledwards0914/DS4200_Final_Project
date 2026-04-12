@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plot 2: Histogram </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1 style = "color:black; font-size: 26px;"> Let's look at our Histogram! </h1>
+
+<div class="A">
+    <div class="A-inner">
+        <div class="box">
+            <h3>Take Away:</h3>
+            <p>This histogram compares the distribution of energy scores across the top five genres. 
+                It shows how frequently songs fall into different energy ranges, making it easier to 
+                compare which genres tend to have lower-energy versus higher-energy songs. This helps 
+                reveal differences in the overall feel and intensity of music across genres.</p>
+        </div>
+        <div class="box">
+            <h3>Interaction:</h3>
+            <p>Click a genre in the legend to highlight that genre and fade the others. This makes 
+                it easier to focus on one genre’s energy distribution without losing the full comparison. 
+                Hover over the bars to see the count of songs in each energy range.</p>
+        </div>
+    </div>
+</div>
+
+<div class="plot">
+    <iframe 
+        src="energy_histogram.html" 
+        width="800" 
+        height="600" 
+        style="border:none;">
+    </iframe>
+</div>
+
+  <p>
+    Go back to the home page or explore other Spotify visualizations!
+</p>
+
+<div>
+    <button onclick="goToPage('index.html')">Home</button>
+    <button onclick="goToPage('page1.html')">Boxplot</button>
+    <button onclick="goToPage('page2.html')">Histogram</button>
+    <button onclick="goToPage('page3.html')">Scatter Plot</button>
+    <button onclick="goToPage('page4.html')">Sankey Diagram</button>
+</div>
+
+<script>
+    function goToPage(page) {
+        window.location.href = page;
+    }
+</script>
+</body>
+
+</html>
