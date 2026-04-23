@@ -9,17 +9,22 @@
 
 <body>
 
-<h1 style = "color:black; font-size: 26px;"> Let's look at our boxplot! </h1>
+<h1 style = "color:black; font-size: 26px;"> Boxplot: Popularity Distribution by Genre </h1>
 
 <div class="A">
     <div class="A-inner">
         <div class="box">
             <h3>Take Away:</h3>
-            <p>This boxplot compares how popularity scores vary across the top Spotify genres. 
-It helps show which genres tend to have higher typical popularity, which ones are 
-more spread out, and where there are outliers. The chart makes it easy to see that 
-some genres are consistently more popular, while others have a wider range of song 
-performance.</p>
+            <p>This boxplot compares popularity score distributions across 15 Spotify genres. 
+                Metal and blues stand out with the highest medians (around 67 and 56 respectively) 
+                and wide interquartile ranges, suggesting strong but variable performance. 
+                Acoustic and mandopop also show high medians with large spreads, indicating a 
+                mix of hits and underperformers within the genre. On the lower end, idm, kids, 
+                and grindcore are consistently unpopular. Their boxes sit below 20 with little 
+                spread, meaning most songs in these genres perform similarly poorly. Latino and 
+                folk have the most dramatic whiskers, stretching nearly the full 0–90 range, 
+                showing extreme variability from song to song. Notable outliers include a rock-n-roll 
+                track scoring around 80 and a latino track near 90, both well above their genre's typical range.</p>
         </div>
         <div class="box">
             <h3>Interaction:</h3>
@@ -27,7 +32,7 @@ performance.</p>
 box, the overall height of the box, and any outlier points. The median shows the typical 
 popularity for that genre, while the spread shows how much popularity varies within it. Hover over
 the box plots to see specific statistics such as the max, Q3, median, Q1, and miniumm of the genre
-that plot represents. 
+that plot represents. Hover over the individual box plots for additional information.  
 </p>
         </div>
     </div>
@@ -48,11 +53,12 @@ that plot represents.
 </p>
 
 <div>
-    <button onclick="goToPage('index.html')">Home</button>
-    <button onclick="goToPage('page1.html')">Boxplot</button>
-    <button onclick="goToPage('page2.html')">Histogram</button>
-    <button onclick="goToPage('page3.html')">Scatter Plot</button>
-    <button onclick="goToPage('page4.html')">Sankey Diagram</button>
+    <button onclick="goToPage('index.html')">Introduction</button>
+    <button onclick="goToPage('page2.html')">Plot 2: Histogram</button>
+    <button onclick="goToPage('page3.html')">Plot 3: Scatter Plot</button>
+    <button onclick="goToPage('artist_D3_barplot.html')">Plot 4: D3 Bar Plot</button>
+    <button onclick="goToPage('page4.html')">Plot 5: Tree Map</button>
+    <button onclick="goToPage('page5.html')">Conclusion</button>
 </div>
 
 <script>
