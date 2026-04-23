@@ -3,35 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plot 4: Sankey Diagram </title>
+    <title>Plot 4: Tree Map </title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<h1 style = "color:black; font-size: 26px;"> Let's look at our Sankey Diagram! </h1>
+<h1 style = "color:black; font-size: 26px;"> Tree Map: Popularity Distribution Across Genres</h1>
 
 <div class="A">
     <div class="A-inner">
         <div class="box">
             <h3>Take Away:</h3>
-            <p>This Sankey diagram shows how songs from the most common genres flow into either 
-                the clean or explicit category. It highlights which genres are more strongly 
-                associated with explicit content and which are mostly clean. This makes it easier to 
-                understand how lyrical content differs across genres at a glance.</p>
+            <p>This treemap shows how popularity is distributed across the top Spotify genres, 
+                broken into three tiers: Low (0–20), Medium (20–50), and High (50–100). The 
+                size of each block represents how many songs fall into that tier, making it 
+                easy to compare which genres produce more highly-rated tracks versus ones that 
+                tend to fly under the radar.</p>
         </div>
         <div class="box">
             <h3>Interaction:</h3>
-            <p>Hover over the flows or nodes to see more detailed values for each connection. The width of
-                each flow represents the number of songs in that category, so wider links mean a 
-                stronger connection between a genre and either clean or explicit content.</p>
+            <p>Hover over any block to see the genre, popularity tier, and exact number of songs 
+                in that segment. The size of each colored section within a genre tells you how 
+                that genre's songs are spread across popularity levels. For example, a larger 
+                green block means more highly popular songs relative to the others.</p>
         </div>
     </div>
 </div>
 
 <div class="plot">
     <iframe 
-        src="spotify_sankey.html" 
+        src="tree_map.html" 
         width="800" 
         height="600" 
         style="border:none;">
@@ -43,11 +45,12 @@
 </p>
 
 <div>
-    <button onclick="goToPage('index.html')">Home</button>
-    <button onclick="goToPage('page1.html')">Boxplot</button>
-    <button onclick="goToPage('page2.html')">Histogram</button>
-    <button onclick="goToPage('page3.html')">Scatter Plot</button>
-    <button onclick="goToPage('page4.html')">Sankey Diagram</button>
+    <button onclick="goToPage('index.html')">Introduction</button>
+    <button onclick="goToPage('page1.html')">Plot 1: Boxplot</button>
+    <button onclick="goToPage('page2.html')">Plot 2: Histogram</button>
+    <button onclick="goToPage('page3.html')">Plot 3: Scatter Plot</button>
+    <button onclick="goToPage('artist_D3_barplot.html')">Plot 4: D3 Bar Plot</button>
+    <button onclick="goToPage('page5.html')">Conclusion</button>
 </div>
 
 <script>
