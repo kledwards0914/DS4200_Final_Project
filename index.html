@@ -8,11 +8,12 @@
 </head>
 
 <body>
-    <h1 style = "color:black; font-size: 32px;"> Welcome to our DS4200 Final Project! </h1>
+    <h1 style = "color:black; font-size: 32px;">Exploring the Relationship 
+    Between Audio Features and Popularity in Spotify Music</h1>
 
     <h2>Introduction:</h2>
 <div class="A">
-    Hi everyone we're Kaitlyn, Mia, and Isabelle, and our project is called Exploring the Relationship 
+    Hi everyone! We're Kaitlyn, Mia, and Isabelle, and our project is called Exploring the Relationship 
     Between Audio Features and Popularity in Spotify Music. Music streaming platforms like Spotify use 
     audio signals to power their recommendation algorithms. We were curious about what actually makes a 
     song popular. Whether that’s how danceable it is, how much energy it has, or whether it's explicit. 
@@ -30,10 +31,12 @@
 </p>
 
 <div>
-    <button onclick="goToPage('page1.html')">Boxplot</button>
-    <button onclick="goToPage('page2.html')">Histogram</button>
-    <button onclick="goToPage('page3.html')">Scatter Plot</button>
-    <button onclick="goToPage('page4.html')">Sankey Diagram</button>
+    <button onclick="goToPage('page1.html')">Plot 1: Boxplot</button>
+    <button onclick="goToPage('page2.html')">Plot 2: Histogram</button>
+    <button onclick="goToPage('page3.html')">Plot 3: Scatter Plot</button>
+    <button onclick="goToPage('artist_D3_barplot.html')">Plot 4: D3 Bar Plot</button>
+    <button onclick="goToPage('page4.html')">Plot 5: Tree Map</button>
+    <button onclick="goToPage('page5.html')">Conclusion</button>
 </div>
 
 <script>
@@ -42,29 +45,6 @@
     }
 </script>
 
-
-<h2>Conclusion: What did we learn from our visualizations?</h2>
-<div class="A">
-    <p>First, genre influences popularity, but it does not determine it. 
-        The boxplot we created showed wide variance within genre, which 
-        suggests that specific audio features within a genre matter more 
-        than the genre label alone. Second, we discovered explicit content 
-        is based on a song's words, not its sound or energy level. The Sankey 
-        Diagram showed EDM and house tend to be clean despite being high energy, 
-        while hip-hop and metal genres dominate the explicit side. Third, high 
-        energy is nearly universal, but differs in degree. The histogram showed 
-        almost all top genres are concentrated in the 0.75-1.0 range, with 
-        black-metal dominating the very top. Fourth, tempo alone does not 
-        determine how danceable a song is. The scatter plot showed that 
-        honky-tonk songs are highly danceable regardless of tempo, while 
-        heavy metal songs score low even at similar tempos. This suggests 
-        that genre style and rhythm matter more than speed. For future work, 
-        it would be interesting to bring in time based data, seeing as how 
-        these features have shifted over decades, and whether what counts as 'popular' 
-        has changed. We'd also want to incorporate artist follower counts, since some 
-        research suggests that artist following is one of the strongest predictors of 
-        popularity. Thanks for visiting our website!</p>
-</div>
 
 
 </body>
